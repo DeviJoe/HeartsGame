@@ -2,7 +2,7 @@ package com.sannikov.service;
 
 import com.sannikov.model.Card;
 
-public interface DeckService extends Iterable<Card> {
+public interface DeckService  {
 
     /**
      * Тасование колоды
@@ -10,7 +10,7 @@ public interface DeckService extends Iterable<Card> {
     void shuffle();
 
     /**
-     * Получение карты з колоды
+     * Получение карты с колоды
      * @return карта с верхушки колоды
      */
     Card getCard();

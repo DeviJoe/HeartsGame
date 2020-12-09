@@ -55,22 +55,4 @@ public class DeckServiceImpl implements DeckService {
             return card;
         } else throw new CardNotFoundException("В колоде нет карт!");
     }
-
-    // todo переопределить итератор для итерования по колоде карт
-    @Override
-    public Iterator<Card> iterator() {
-        return new Iterator<Card>() {
-            @Override
-            public boolean hasNext() {
-                return false;
-            }
-
-            @Override
-            public Card next() {
-                return null;
-            }
-        };
-    }
-
-
 }
