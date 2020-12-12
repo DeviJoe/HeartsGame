@@ -18,19 +18,16 @@ public interface GameContext {
     void initialize();
 
     /**
-     * Фаза обмена картами в игре: каждый игрок передает 3 любые карты одному из партнеров
+     * Фаза обмена картами в игре: каждый игрок передает 3 любые карты одному из партнеров каждый раунд
      */
     void changeFaze(TransferDto p1, TransferDto p2, TransferDto p3, TransferDto p4);
 
-    /**
-     * Розыгрыш 13 взяток
-     */
-    void bribe();
+
 
     /**
      * Изменение количества очков у игроков после взятки
      */
-    void updateScoreOnPlayers();
+    void updateScoreOnPlayers(PlayerService player);
 
     /**
      * Проверка, есть ли у кого-то из игроков 100 очков
