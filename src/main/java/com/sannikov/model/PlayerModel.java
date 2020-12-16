@@ -7,12 +7,22 @@ import lombok.Setter;
 import java.util.LinkedList;
 import java.util.List;
 
-@EqualsAndHashCode
 public class PlayerModel {
 
-    @Getter
+
     private final List<Card> hand = new LinkedList<>();
 
-    @Getter @Setter
     private int score;
+
+    public List<Card> getHand() {
+        return hand;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 }
